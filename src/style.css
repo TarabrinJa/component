@@ -14,18 +14,18 @@ form {
 fieldset {
 	margin: 0 10px;
 	padding: 6px 0;
-	display: flex;
-	flex-direction: column;
+	/* display: flex;
+	flex-direction: column; */
 	border: none;
+}
+
+fieldset.choose-license {
+	color: #797a7a;
 	border-bottom: 1px solid #e2e2e2;
 }
 
 .choose-license input[type=radio] {
 	display: none;
-}
-
-.choose-license {
-	color: #797a7a;
 }
 
 .choose-license label {
@@ -80,30 +80,61 @@ fieldset {
 	font-family: 'Bebas', sans-serif;
 	font-size: 1.5em;
 	margin-left: 35px;
+	transform: scaleX(1.1);
 }
 
-/* Образцы - удалить */
-.form_radio input[type=radio]:checked + label:before {
-	background: url(/img/radio-2.png) 0 0 no-repeat;
+.price {
+	transform: scaleX(1.1);
 }
 
-.form_radio label {
-	display: inline-block;
-	
-	position: relative;
-	padding-left: 25px;
-	margin-right: 0;
-	line-height: 18px;
-	user-select: none;
+fieldset.number-of-licenses {
+	border-bottom: 1px solid #ccc;
+	padding: 20px 0 17px;
 }
 
-.form_radio label:before {
-	content: "";
-	display: inline-block;
-	width: 17px;
-	height: 18px;
-	position: absolute;
-	left: 0;
-	bottom: 1px;
-	background: url(/img/radio-1.png) 0 0 no-repeat;
+.number-of-licenses span {
+	margin-left: 74px;
+}
+
+.number-of-licenses input[type="number"] {
+	box-sizing: border-box;
+	min-height: 20px;
+	max-width: 40px;
+	margin-left: 5px;
+	border: none;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+
+.number-of-licenses input[type="number"]:hover,
+.number-of-licenses input[type="number"]:focus {
+	border-color: #92b4eb;
+}
+
+fieldset.buy-licenses {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.button {
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #33a845;
+	border: none;
+	padding: 10px 40px;
+	border-radius: 50% / 60px;
+}
+
+.total {
+	color: #797a7a;
+	font-family: 'Bebas', sans-serif;
+	font-size: 1.7em;
+	/* transform: scaleX(1.1); */ /* Раскомментировать, как спозиционирую */
+}
+
+.total b {
+	font-weight: normal;
+	color: #3388a8;
 }
