@@ -11,7 +11,7 @@
 </head>
 <body>
 	<form action="https://somesitewithaserver.com" method>
-		<fieldset class="choose-license">
+		<div class="choose-license">
 			<input id="license-plan-1" type="radio" name="choose-license-plan">
 			<label for="license-plan-1">
 				<span class="plan-name">license plan #1</span>
@@ -27,24 +27,18 @@
 				<span class="plan-name">license plan #3</span>
 				<span class="price">$34 per license</span>
 			</label>
-		</fieldset>
-		<fieldset class="number-of-licenses">
+		</div>
+		<div class="number-of-licenses">
 			<label>
 				<span>Number of licenses:</span>
 				<input type="number">
 			</label>
-		</fieldset>
-		<fieldset class="buy-licenses">
-			<div>
-				<span class="total">Total: <b>$<output>340<sup>US</sup></output></b></span>
-			</div>
-			<div>
-				<button class="button" type="submit">Buy now</button>
-			</div>
-			<div>
-				<span class="selected">Selected plan: #<output>3</output></span>
-			</div>
-		</fieldset>
+		</div>
+		<div class="buy-licenses">
+			<span class="total">Total: <b>$<output>340<sup>US</sup></output></b></span>
+			<button class="button" type="submit">Buy now</button>
+			<span class="selected">Selected plan: #<output>3</output></span>
+		</div>
 	</form>
 </body>
 </html>

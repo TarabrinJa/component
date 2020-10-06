@@ -11,15 +11,14 @@ form {
 	background-color: #f8f8f8;
 }
 
-fieldset {
+form > div {
 	margin: 0 10px;
 	padding: 6px 0;
-	/* display: flex;
-	flex-direction: column; */
-	border: none;
 }
 
-fieldset.choose-license {
+/* ! fieldset 1 */
+
+.choose-license {
 	color: #797a7a;
 	border-bottom: 1px solid #e2e2e2;
 }
@@ -87,7 +86,9 @@ fieldset.choose-license {
 	transform: scaleX(1.1);
 }
 
-fieldset.number-of-licenses {
+/* ! fieldset 2 */
+
+.number-of-licenses {
 	border-bottom: 1px solid #ccc;
 	padding: 20px 0 17px;
 }
@@ -111,11 +112,23 @@ fieldset.number-of-licenses {
 	border-color: #92b4eb;
 }
 
-fieldset.buy-licenses {
-	display:flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+/* ! fieldset 3 */
+
+.buy-licenses {
+	display: flex;
+	justify-content: center;
+}
+
+.total {
+	color: #797a7a;
+	font-family: 'Bebas', sans-serif;
+	font-size: 1.7em;
+	/*transform: scaleX(1.1); Раскомментировать, как спозиционирую*/
+}
+
+.total b {
+	font-weight: normal;
+	color: #3388a8;
 }
 
 .button {
@@ -125,16 +138,4 @@ fieldset.buy-licenses {
 	border: none;
 	padding: 10px 40px;
 	border-radius: 50% / 60px;
-}
-
-.total {
-	color: #797a7a;
-	font-family: 'Bebas', sans-serif;
-	font-size: 1.7em;
-	/* transform: scaleX(1.1); */ /* Раскомментировать, как спозиционирую */
-}
-
-.total b {
-	font-weight: normal;
-	color: #3388a8;
 }
