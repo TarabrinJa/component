@@ -5,7 +5,6 @@ body {
 
 form {
 	margin: 5px auto 0;
-	min-height: 365px; /* Удалить это, если окажется не нужно */
 	max-width: 355px;
 	border: 8px solid #ebebeb;
 	background-color: #f8f8f8;
@@ -116,14 +115,17 @@ form > div {
 
 .buy-licenses {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 
 .total {
+	margin-top: 16px;
+	margin-bottom: 8px;
 	color: #797a7a;
 	font-family: 'Bebas', sans-serif;
-	font-size: 1.7em;
-	/*transform: scaleX(1.1); Раскомментировать, как спозиционирую*/
+	font-size: 1.8em;
+	transform: scaleX(1.1);
 }
 
 .total b {
@@ -131,11 +133,24 @@ form > div {
 	color: #3388a8;
 }
 
+.total sup {
+	top: -0.4em;
+	font-size: 65%;
+}
+
 .button {
 	text-transform: uppercase;
 	color: #fff;
 	background-color: #33a845;
 	border: none;
-	padding: 10px 40px;
+	padding: 10px 38px;
 	border-radius: 50% / 60px;
+}
+
+.selected {
+	margin-top: 28px;
+	margin-bottom: 27px;
+	color: #3388a8;
+	font-size: 1.1em;
+	transform: scaleX(1.2);
 }
