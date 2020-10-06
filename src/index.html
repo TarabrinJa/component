@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Testing task	- R&B Afla Group</title>
+	<link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./font/font.css">
+</head>
+<body>
+	<form action="https://somesitewithaserver.com" method>
+		<fieldset class="choose-license">
+			<input id="license-plan-1" type="radio" name="choose-license-plan">
+			<label for="license-plan-1">
+				<span class="plan-name">license plan #1</span>
+				<span class="price">$13 per license</span>
+			</label>
+			<input id="license-plan-2" type="radio" name="choose-license-plan">
+			<label for="license-plan-2">
+				<span class="plan-name">license plan #2</span>
+				<span class="price">$22 per license</span>
+			</label>
+			<input id="license-plan-3" type="radio" name="choose-license-plan" checked>
+			<label for="license-plan-3">
+				<span class="plan-name">license plan #3</span>
+				<span class="price">$34 per license</span>
+			</label>
+		</fieldset>
+		<fieldset>
+			<label>Number of licenses
+				<input type="number">
+			</label>
+		</fieldset>
+		<fieldset>
+			<span class="total">Total: $<output>340<sup>US</sup></output></span>
+			<button class="button" type="submit">Buy now</button>
+			<span class="selected">Selected plan: #<output>3</output></span>
+		</fieldset>
+	</form>
+</body>
+</html>

@@ -1,0 +1,109 @@
+body {
+	font-family: sans-serif;
+	font-size: 10px;
+}
+
+form {
+	margin: 5px auto 0;
+	min-height: 365px; /* Удалить это, если окажется не нужно */
+	max-width: 355px;
+	border: 8px solid #ebebeb;
+	background-color: #f8f8f8;
+}
+
+fieldset {
+	margin: 0 10px;
+	padding: 6px 0;
+	display: flex;
+	flex-direction: column;
+	border: none;
+	border-bottom: 1px solid #e2e2e2;
+}
+
+.choose-license input[type=radio] {
+	display: none;
+}
+
+.choose-license {
+	color: #797a7a;
+}
+
+.choose-license label {
+	padding: 15px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	cursor: pointer;
+	position: relative;
+}
+
+.choose-license label:hover,
+.choose-license input[type=radio]:checked + label {
+	outline: 1px solid #bcd9e3;
+	background-color: #ebf4f7;
+}
+
+.choose-license label::before {
+	content: "";
+	display: block;
+	width: 22px;
+	height: 22px;
+	box-sizing: border-box;
+	position: absolute;
+	left: 15px;
+	top: 12px;
+	background-color: transparent;
+	border: 3px solid #e2e2e2;
+	border-radius: 50%;
+}
+
+.choose-license label:hover::before,
+.choose-license input[type=radio]:checked + label::before {
+	border-color: #34648e;
+}
+
+.choose-license input[type=radio]:checked + label::after {
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	left: 21px;
+	top: 18px;
+	background-color: #0294bf;
+	border-radius: 50%;
+}
+
+.plan-name {
+	font-family: 'Bebas', sans-serif;
+	font-size: 1.5em;
+	margin-left: 35px;
+}
+
+/* Образцы - удалить */
+.form_radio input[type=radio]:checked + label:before {
+	background: url(/img/radio-2.png) 0 0 no-repeat;
+}
+
+.form_radio label {
+	display: inline-block;
+	
+	position: relative;
+	padding-left: 25px;
+	margin-right: 0;
+	line-height: 18px;
+	user-select: none;
+}
+
+.form_radio label:before {
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 18px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background: url(/img/radio-1.png) 0 0 no-repeat;
+}
