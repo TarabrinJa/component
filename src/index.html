@@ -10,19 +10,19 @@
 	<link rel="stylesheet" href="./font/font.css">
 </head>
 <body>
-	<form action="https://somesitewithaserver.com" method>
+	<form action="https://somesitewithaserver.com" method="post">
 		<div class="choose-license">
-			<input id="license-plan-1" type="radio" name="choose-license-plan">
+			<input id="license-plan-1" name="licenseToggle" value="1" data-license-price="13" type="radio" >
 			<label for="license-plan-1">
 				<span class="plan-name">license plan #1</span>
 				<span class="price">$13 per license</span>
 			</label>
-			<input id="license-plan-2" type="radio" name="choose-license-plan">
+			<input id="license-plan-2" name="licenseToggle" value="2" data-license-price="22" type="radio">
 			<label for="license-plan-2">
 				<span class="plan-name">license plan #2</span>
 				<span class="price">$22 per license</span>
 			</label>
-			<input id="license-plan-3" type="radio" name="choose-license-plan" checked>
+			<input id="license-plan-3" name="licenseToggle" value="3" data-license-price="34" type="radio" checked>
 			<label for="license-plan-3">
 				<span class="plan-name">license plan #3</span>
 				<span class="price">$34 per license</span>
@@ -31,14 +31,15 @@
 		<div class="number-of-licenses">
 			<label>
 				<span>Number of licenses:</span>
-				<input type="number">
+				<input type="number" value="10">
 			</label>
 		</div>
 		<div class="buy-licenses">
-			<span class="total">Total: <b>$<output>340<sup>US</sup></output></b></span>
+			<span class="total">Total: <b>$<output>340</output><sup>US</sup></b></span>
 			<button class="button" type="submit">Buy now</button>
 			<span class="selected">Selected plan: #<output>3</output></span>
 		</div>
 	</form>
+	<script src="./logic.js"></script>
 </body>
 </html>
